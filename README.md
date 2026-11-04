@@ -1,11 +1,67 @@
-<div align="center">
+# UniWise – HITU: University Intelligent Management Platform
+## المنصة الجامعية الذكية المتكاملة – جامعة حلوان التكنولوجية الدولية (HITU)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+منصة برمجية متكاملة تدمج بين:
+1. **نظام متابعة ورصد الحضور والغياب للجامعات التكنولوجية (Attendance Management System)**.
+2. **النظام الخبير الأكاديمي والاستدلال اللائحي (UniWise Academic Expert System)**.
+3. **نظام إدارة شؤون الطلاب والدرجات والأقسام التكنولوجية (Academic & Student Management)**.
 
-  <h1>Built with AI Studio</h2>
+تم تطوير المنصة وفقاً للمعايير الأكاديمية واللائحة التنفيذية لجامعة حلوان التكنولوجية الدولية (Helwan Int'l Technological University - HITU).
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## الميزة الجوهرية للمنصة (Core Integration)
+ربط بيانات الحضور والغياب اللحظية بالنظام الخبير ومحرك الاستدلال الأمامي (Forward Chaining):
+- تحويل سجلات الغياب اليومية إلى حقائق داخل الذاكرة العاملة (Working Memory).
+- تطبيق شجرة قواعد الإنتاج (Production Rules) للكشف التلقائي عن:
+  - خطر الحرمان من الامتحان النهائي (تجاوز سقف الـ 25% غياب).
+  - التعثر الأكاديمي المركب (انخفاض الحضور مع تدني المعدل التراكمي GPA < 2.00).
+  - ضعف أعمال السنة والميدتيرم مع الغياب المتكرر.
+  - تكريم الطلاب المتفوقين في لوحة شرف عميد الكلية.
+- تقديم تعليل منطقي فوري عبر **نظام التعليل والتفسير (Explanation Facility)** يوضح بالأرقام الصريحة:
+  - لماذا اتخذ النظام هذا القرار؟ (المؤشرات والحقائق).
+  - كيف تم استنتاج النتيجة؟ (القواعد المفعلة ومسار الاستدلال).
+  - ما هي التوصيات الأكاديمية اللائحية المعتمدة؟
 
-</div>
+---
+
+## متطلبات التشغيل (System Requirements)
+- Node.js (v18+)
+- npm (v9+)
+- المتصفحات المدعومة: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari
+
+---
+
+## خطوات التثبيت والتشغيل السريع (Quickstart)
+
+```bash
+# 1. تثبيت الحزم والمكتبات
+npm install
+
+# 2. تشغيل بيئة التطوير
+npm run dev
+```
+
+تفتح المنصة افتراضياً على المنفذ: `http://localhost:3000`
+
+---
+
+## تشغيل الاختبارات الآلية (Running Unit Tests)
+
+تم تصميم النظام وفق أسلوب Decoupled Pure Architecture لضمان اختبار محرك الاستدلال والحسابات الأكاديمية بدقة:
+
+```bash
+# تشغيل جميع اختبارات الاستدلال وحسابات اللائحة
+npx --yes tsx --test src/utils/academicCalculations.test.ts
+npx --yes tsx --test src/expert-system/inferenceEngine.test.ts
+```
+
+---
+
+## وثائق التسليم الرسمية للدكتور (Handover Documentation)
+تشتمل حزمة التسليم على الوثائق التالية باللغة العربية:
+- `DOCTOR_HANDOVER_AR.md`: الدليل الإرشادي الكامل لمناقشة الدكتور وسيناريو العرض الشفهي.
+- `SYSTEM_ARCHITECTURE_AR.md`: المعمارية التقنية والهندسية وكيفية تدفق البيانات بين الوحدات.
+- `DATABASE_DOCUMENTATION_AR.md`: التوثيق التفصيلي لجداول وعلاقات قاعدة البيانات والقيود.
+- `PRODUCTION_READINESS_AR.md`: تقرير الجاهزية والخطوات المطلوبة قبل الإطلاق الرسمي للجامعة.
+- `TEST_REPORT_AR.md`: سجل الاختبارات الفعلية ونتائج فحوص الجودة والأداء.

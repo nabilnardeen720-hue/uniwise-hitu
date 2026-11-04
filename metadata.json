@@ -1,0 +1,6 @@
+{
+  "name": "UniWise – HITU: University Intelligent Management Platform",
+  "description": "المنصة الجامعية الذكية المتكاملة لجامعة حلوان التكنولوجية الدولية (HITU) لإدارة الطلاب والحضور والغياب والنظام الخبير الأكاديمي والتقارير المتقدمة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
